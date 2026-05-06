@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Ejercicios Python - Clase 3</title>
+    <title>Ejercicios Python - Debug Clase 3</title>
     <style>
         body {
             font-family: Arial;
@@ -24,12 +24,11 @@
             border-radius: 5px;
             margin-bottom: 10px;
         }
-        .input {
-            background: #fff8d6;
-            padding: 6px;
+        .task {
+            background: #fff3cd;
+            padding: 8px;
             border-radius: 5px;
             margin-bottom: 10px;
-            font-size: 14px;
         }
         pre {
             background: #222;
@@ -42,64 +41,63 @@
 </head>
 <body>
 
-<h1>Ejercicios Python - Clase 3</h1>
+<h1>Ejercicios Python - Encuentra el error 🐛</h1>
 
 <div class="box">
     <h2>1. Saludo personalizado</h2>
     <div class="desc">
-        📌 El programa te va a pedir tu nombre y luego te va a saludar.
+        📌 El programa debería pedir tu nombre y saludarte.
     </div>
-    <div class="input">
-        ⌨️ Escribí tu nombre y presioná <b>Enter</b>
+    <div class="task">
+        🎯 Copiá el código, ejecutalo y encontrá el error.
     </div>
     <pre>
-nombre = input("Escribí tu nombre y presioná Enter: ")
-print("Hola", nombre)
+nombre = input("Escribí tu nombre y presioná Enter")
+print("Hola " nombre)
     </pre>
 </div>
 
 <div class="box">
     <h2>2. Edad del alumno</h2>
     <div class="desc">
-        📌 Ingresá tu nombre y tu edad. Luego verás una frase con esos datos.
+        📌 Debería mostrar: "Juan tiene 15 años"
     </div>
-    <div class="input">
-        ⌨️ Escribí tu nombre y presioná Enter  
-        ⌨️ Escribí tu edad y presioná Enter
+    <div class="task">
+        🎯 Encontrá por qué no funciona correctamente.
     </div>
     <pre>
-nombre = input("Escribí tu nombre y presioná Enter: ")
-edad = input("Escribí tu edad y presioná Enter: ")
-print(nombre, "tiene", edad, "años")
+nombre = input("Nombre: ")
+edad = input("Edad: ")
+print(nombre + " tiene " + edad + " años"
     </pre>
 </div>
 
 <div class="box">
     <h2>3. Mensaje doble</h2>
     <div class="desc">
-        📌 Escribí un mensaje y el programa lo mostrará dos veces.
+        📌 El mensaje debería aparecer dos veces.
     </div>
-    <div class="input">
-        ⌨️ Escribí un mensaje y presioná Enter
+    <div class="task">
+        🎯 Revisá el código y corregí el problema.
     </div>
     <pre>
-texto = input("Escribí un mensaje y presioná Enter: ")
+texto = input("Escribí un mensaje: ")
 print(texto)
-print(texto)
+print(text)
     </pre>
 </div>
 
 <div class="box">
     <h2>4. Eco del usuario</h2>
     <div class="desc">
-        📌 Escribí una palabra y se mostrará en mayúsculas y minúsculas.
+        📌 Mostrar palabra en mayúscula y minúscula.
     </div>
-    <div class="input">
-        ⌨️ Escribí una palabra y presioná Enter
+    <div class="task">
+        🎯 Detectá el error en el uso de funciones.
     </div>
     <pre>
-palabra = input("Escribí una palabra y presioná Enter: ")
-print(palabra.upper())
+palabra = input("Palabra: ")
+print(palabra.upper)
 print(palabra.lower())
     </pre>
 </div>
@@ -107,34 +105,31 @@ print(palabra.lower())
 <div class="box">
     <h2>5. Presentación</h2>
     <div class="desc">
-        📌 Ingresá tus datos personales para generar una presentación.
+        📌 Mostrar nombre, apellido y curso.
     </div>
-    <div class="input">
-        ⌨️ Nombre + Enter  
-        ⌨️ Apellido + Enter  
-        ⌨️ Curso + Enter
+    <div class="task">
+        🎯 Encontrá el error de sintaxis.
     </div>
     <pre>
-nombre = input("Nombre y Enter: ")
-apellido = input("Apellido y Enter: ")
-curso = input("Curso y Enter: ")
-print("Soy", nombre, apellido, "del curso", curso)
+nombre = input("Nombre: ")
+apellido = input("Apellido: ")
+curso = input("Curso: ")
+print("Soy", nombre apellido, "del curso", curso)
     </pre>
 </div>
 
 <div class="box">
     <h2>6. Suma de dos números</h2>
     <div class="desc">
-        📌 Ingresá dos números y el programa mostrará la suma.
+        📌 Sumar dos números ingresados.
     </div>
-    <div class="input">
-        ⌨️ Número 1 + Enter  
-        ⌨️ Número 2 + Enter
+    <div class="task">
+        🎯 Corregí el problema para que funcione la suma.
     </div>
     <pre>
-a = input("Número 1 y Enter: ")
-b = input("Número 2 y Enter: ")
-print("Resultado:", int(a) + int(b))
+a = input("Número 1: ")
+b = input("Número 2: ")
+print("Resultado:", a + b)
     </pre>
 </div>
 
