@@ -1,136 +1,141 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Día del Trabajador</title>
-
-<style>
-body {
-    background-color: #121212;
-    color: #e0e0e0;
-    font-family: Georgia, "Times New Roman", serif;
-    line-height: 1.7;
-    margin: 40px;
-}
-
-.container {
-    max-width: 900px;
-    margin: auto;
-}
-
-h1, h2, h3 {
-    color: #bbdefb;
-}
-
-.subtitle {
-    color: #90caf9;
-    margin-bottom: 20px;
-}
-
-.section {
-    margin-top: 30px;
-}
-
-.box {
-    background-color: #1e1e1e;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 10px;
-}
-
-ol {
-    margin-left: 20px;
-}
-
-strong {
-    color: #ffffff;
-}
-
-em {
-    color: #b0bec5;
-}
-</style>
+    <meta charset="UTF-8">
+    <title>Ejercicios Python - Clase 3</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        .box {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+        h2 {
+            color: #333;
+        }
+        .desc {
+            background: #eef;
+            padding: 8px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .input {
+            background: #fff8d6;
+            padding: 6px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        pre {
+            background: #222;
+            color: #0f0;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="container">
-
-<h1>1° de mayo: Día Internacional del Trabajador</h1>
-<p class="subtitle">Área de comunicaciones - Escuela de Comercio América 6 D.E. 13</p>
-
-<div class="section box">
-<p>Durante la jornada de hoy conmemoraremos el Día del Trabajador, que se recuerda cada 1° de mayo. A partir de la lectura y las consignas, se busca comprender cómo eran las condiciones de trabajo en el pasado, qué luchas permitieron conquistar derechos y por qué esos temas siguen siendo importantes en la actualidad. Leé con atención y respondé las actividades de reflexión.</p>
-</div>
-
-<div class="section">
-<h2>Parte 1: los orígenes del Día del Trabajador</h2>
+<h1>Ejercicios Python - Clase 3</h1>
 
 <div class="box">
-<h3>La sangre que marcó el calendario</h3>
-<h3>El origen: Chicago, 1886</h3>
-
-<p>A finales del siglo XIX, las condiciones laborales eran inhumanas: jornadas de 14 a 16 horas, sin descanso semanal, en fábricas insalubres y con trabajo infantil generalizado. El 1° de mayo de 1886, en Estados Unidos, la central obrera convocó a una huelga nacional bajo el lema: "Ocho horas para el trabajo, ocho horas para el sueño y ocho horas para la casa".</p>
-
-<p>En Chicago, el conflicto fue más agudo. Tras días de movilizaciones, el 4 de mayo se produjo una concentración en la plaza Haymarket. Una bomba estalló cerca de la policía y desató una represión feroz. Sin pruebas claras, ocho líderes sindicales (anarquistas y socialistas) fueron sometidos a un juicio irregular. Cinco de ellos fueron condenados a muerte. Se los conoce como los "Mártires de Chicago". Gracias a su sacrificio, el límite de 8 horas comenzó a ser ley en todo el mundo.</p>
-
-<h3>La mujer en la primera línea</h3>
-
-<p>La historia suele centrarse en los hombres, pero las mujeres fueron motor de estas luchas. Lucy Parsons, líder sindical afrodescendiente y esposa de uno de los mártires, desafió a la policía en las calles y organizó a las trabajadoras de la confección, que sufrían salarios mucho más bajos que los varones.</p>
-
-<p>En Argentina, el 1° de mayo se conmemora desde 1890. Mujeres como Virginia Bolten lideraron columnas de trabajadores alzando banderas que denunciaban la doble explotación: la del patrón en la fábrica y la del marido en el hogar. Estas pioneras entendieron que no hay justicia laboral sin igualdad de género.</p>
-
-<h3>La actualidad en Argentina: Entre derechos y reformas</h3>
-
-<p>A lo largo de los años, Argentina logró leyes pioneras: el aguinaldo, las vacaciones pagas, la protección contra el despido arbitrario y la licencia por maternidad. Sin embargo, hoy el país debate una Reforma Laboral impulsada por el gobierno. Los ejes principales plantean ampliar el período de prueba, reemplazar las indemnizaciones por fondos de cese laboral y reducir las multas a los empleadores que no registran a sus empleados ("trabajo en negro"). El debate está abierto: ¿es una modernización necesaria para generar empleo o una pérdida de derechos conquistados hace un siglo?</p>
+    <h2>1. Saludo personalizado</h2>
+    <div class="desc">
+        📌 El programa te va a pedir tu nombre y luego te va a saludar.
+    </div>
+    <div class="input">
+        ⌨️ Escribí tu nombre y presioná <b>Enter</b>
+    </div>
+    <pre>
+nombre = input("Escribí tu nombre y presioná Enter: ")
+print("Hola", nombre)
+    </pre>
 </div>
 
 <div class="box">
-<h3>Actividades de Reflexión</h3>
-<ol>
-<li>El texto menciona tres cambios de la nueva Reforma Laboral (periodo de prueba, indemnización, multas). Elijan uno y expliquen cómo afectaría a un joven que busca su primer empleo.</li>
-<li>¿Por qué creen que el "trabajo de cuidado" (limpiar, cocinar, cuidar niños) no suele recibir un sueldo si es fundamental para que la sociedad funcione?</li>
-<li>¿Consideran que para que haya más empleo el Estado debe quitar exigencias a las empresas, o que los derechos laborales son "intocables"? Justifiquen.</li>
-</ol>
-</div>
-
-</div>
-
-<div class="section">
-<h2>Parte 2: Derechos laborales en debate — del artículo 14 bis de la Constitución nacional a los desafíos actuales</h2>
-
-<div class="box">
-<p><strong>Art. 14 bis.-</strong> El trabajo en sus diversas formas gozará de la protección de las leyes, las que asegurarán al trabajador: condiciones dignas y equitativas de labor; jornada limitada; descanso y vacaciones pagados; retribución justa; salario mínimo vital móvil; igual remuneración por igual tarea; participación en las ganancias de las empresas, con control de la producción y colaboración en la dirección; protección contra el despido arbitrario; estabilidad del empleado público; organización sindical libre y democrática, reconocida por la simple inscripción en un registro especial.</p>
-
-<p>Queda garantizado a los gremios: concertar convenios colectivos de trabajo; recurrir a la conciliación y al arbitraje; el derecho de huelga. Los representantes gremiales gozarán de las garantías necesarias para el cumplimiento de su gestión sindical y las relacionadas con la estabilidad de su empleo.</p>
-
-<p>El Estado otorgará los beneficios de la seguridad social, que tendrá carácter de integral e irrenunciable. En especial, la ley establecerá: el seguro social obligatorio; jubilaciones y pensiones móviles; la protección integral de la familia; la defensa del bien de familia; la compensación económica familiar y el acceso a una vivienda digna.</p>
+    <h2>2. Edad del alumno</h2>
+    <div class="desc">
+        📌 Ingresá tu nombre y tu edad. Luego verás una frase con esos datos.
+    </div>
+    <div class="input">
+        ⌨️ Escribí tu nombre y presioná Enter  
+        ⌨️ Escribí tu edad y presioná Enter
+    </div>
+    <pre>
+nombre = input("Escribí tu nombre y presioná Enter: ")
+edad = input("Escribí tu edad y presioná Enter: ")
+print(nombre, "tiene", edad, "años")
+    </pre>
 </div>
 
 <div class="box">
-<h3>Actividades</h3>
-<ol>
-<li>Elegí dos derechos que aparezcan en el artículo 14 bis de nuestra Constitución Nacional y explicalos con tus palabras.</li>
-<li>¿Qué derechos creen que hoy están en peligro o que no se cumplen? ¿Por qué?</li>
-<li>
-Caso real: Una persona trabaja para una app de reparto. No tiene horario fijo, no tiene vacaciones pagas, cobra por pedido y si se accidenta los gastos corren por su cuenta.
-<ul>
-<li>a) ¿Qué derechos del artículo 14 bis no se cumplen?</li>
-<li>b) ¿Qué problemas aparecen?</li>
-</ul>
-</li>
-<li>¿Cómo crees que afectan las tecnologías actuales al derecho al descanso y la desconexión?</li>
-</ol>
+    <h2>3. Mensaje doble</h2>
+    <div class="desc">
+        📌 Escribí un mensaje y el programa lo mostrará dos veces.
+    </div>
+    <div class="input">
+        ⌨️ Escribí un mensaje y presioná Enter
+    </div>
+    <pre>
+texto = input("Escribí un mensaje y presioná Enter: ")
+print(texto)
+print(texto)
+    </pre>
 </div>
 
+<div class="box">
+    <h2>4. Eco del usuario</h2>
+    <div class="desc">
+        📌 Escribí una palabra y se mostrará en mayúsculas y minúsculas.
+    </div>
+    <div class="input">
+        ⌨️ Escribí una palabra y presioná Enter
+    </div>
+    <pre>
+palabra = input("Escribí una palabra y presioná Enter: ")
+print(palabra.upper())
+print(palabra.lower())
+    </pre>
 </div>
 
-<div class="section box">
-<h2>Parte 3</h2>
-<p>Los invitamos, en el recreo, a que escriban en el mural de la escuela el nombre y la profesión de aquellas personas que quieran agradecer por la labor que hacen día a día.</p>
+<div class="box">
+    <h2>5. Presentación</h2>
+    <div class="desc">
+        📌 Ingresá tus datos personales para generar una presentación.
+    </div>
+    <div class="input">
+        ⌨️ Nombre + Enter  
+        ⌨️ Apellido + Enter  
+        ⌨️ Curso + Enter
+    </div>
+    <pre>
+nombre = input("Nombre y Enter: ")
+apellido = input("Apellido y Enter: ")
+curso = input("Curso y Enter: ")
+print("Soy", nombre, apellido, "del curso", curso)
+    </pre>
 </div>
 
+<div class="box">
+    <h2>6. Suma de dos números</h2>
+    <div class="desc">
+        📌 Ingresá dos números y el programa mostrará la suma.
+    </div>
+    <div class="input">
+        ⌨️ Número 1 + Enter  
+        ⌨️ Número 2 + Enter
+    </div>
+    <pre>
+a = input("Número 1 y Enter: ")
+b = input("Número 2 y Enter: ")
+print("Resultado:", int(a) + int(b))
+    </pre>
 </div>
 
 </body>
