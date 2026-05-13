@@ -1,137 +1,176 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Ejercicios Python - Debug Clase 3</title>
-    <style>
-        body {
-            font-family: Arial;
-            background: #f4f4f4;
-            padding: 20px;
-        }
-        .box {
-            background: white;
-            padding: 15px;
-            margin-bottom: 15px;
-            border-radius: 8px;
-        }
-        h2 {
-            color: #333;
-        }
-        .desc {
-            background: #eef;
-            padding: 8px;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-        .task {
-            background: #fff3cd;
-            padding: 8px;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-        pre {
-            background: #222;
-            color: #0f0;
-            padding: 10px;
-            border-radius: 5px;
-            overflow-x: auto;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taller Python - Clase 1</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+
+    header {
+      background-color: #1e293b;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 16px;
+      opacity: 0.9;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 30px auto;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #0f172a;
+    }
+
+    .objetivo {
+      background-color: #e0f2fe;
+      padding: 10px;
+      border-left: 5px solid #0284c7;
+      margin-bottom: 15px;
+      border-radius: 5px;
+    }
+
+    .descripcion {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    pre {
+      background-color: #0f172a;
+      color: #e2e8f0;
+      padding: 20px;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
 
-<h1>Ejercicios Python - Encuentra el error 🐛</h1>
+  <header>
+    <h1>Taller de Python — Clase 1</h1>
+    <p>Actividades interactivas para secundaria</p>
+  </header>
 
-<div class="box">
-    <h2>1. Saludo personalizado</h2>
-    <div class="desc">
-        📌 El programa debería pedir tu nombre y saludarte.
-    </div>
-    <div class="task">
-        🎯 Copiá el código, ejecutalo y encontrá el error.
-    </div>
-    <pre>
-nombre = input("Escribí tu nombre y presioná Enter")
-print("Hola " nombre)
-    </pre>
-</div>
+  <div class="container">
 
-<div class="box">
-    <h2>2. Edad del alumno</h2>
-    <div class="desc">
-        📌 Debería mostrar: "Juan tiene 15 años"
+    <div class="card">
+      <h2>Actividad 1 — Ficha de personaje</h2>
+
+      <div class="objetivo">
+        <strong>Objetivo:</strong> usar <code>print()</code>, <code>input()</code> y variables.
+      </div>
+
+      <div class="descripcion">
+        El programa hace preguntas y crea una ficha absurda del estudiante.
+      </div>
+
+      <pre><code>print("=== GENERADOR DE PERSONAJES ===")
+
+nombre = input("¿Cómo te llamás? ")
+edad = input("¿Qué edad tenés? ")
+comida = input("¿Comida favorita? ")
+miedo = input("¿Cuál es tu mayor miedo? ")
+
+print("")
+print("FICHA SECRETA")
+print("Nombre:", nombre)
+print("Edad:", edad)
+print("Come demasiado:", comida)
+print("Le tiene miedo a:", miedo)
+print("Nivel de peligro: EXTREMO")</code></pre>
     </div>
-    <div class="task">
-        🎯 Encontrá por qué no funciona correctamente.
+
+    <div class="card">
+      <h2>Actividad 2 — Detector de vagancia</h2>
+
+      <div class="objetivo">
+        <strong>Objetivo:</strong> trabajar concatenación de texto.
+      </div>
+
+      <div class="descripcion">
+        El programa analiza científicamente al estudiante y genera un resultado gracioso.
+      </div>
+
+      <pre><code>nombre = input("Nombre: ")
+horas = input("¿Cuántas horas dormís? ")
+materia = input("Materia menos favorita: ")
+
+print("")
+print("RESULTADO FINAL")
+print("El estudiante " + nombre + " duerme " + horas + " horas por día.")
+print("Los científicos descubrieron que odia la materia: " + materia)
+print(nombre + " tiene un 87% de probabilidades de querer volver a dormir.")</code></pre>
     </div>
-    <pre>
+
+    <div class="card">
+      <h2>Actividad 3 — Encontrá el error</h2>
+
+      <div class="objetivo">
+        <strong>Objetivo:</strong> aprender a leer errores y debuggear.
+      </div>
+
+      <div class="descripcion">
+        Los estudiantes deben ejecutar el programa y descubrir qué error tiene.
+      </div>
+
+      <pre><code>print("=== ANALISIS ECONOMICO ===")
+
 nombre = input("Nombre: ")
-edad = input("Edad: ")
-print(nombre + " tiene " + edad + " años"
-    </pre>
-</div>
+dinero = input("Cuánta plata tenés? ")
 
-<div class="box">
-    <h2>3. Mensaje doble</h2>
-    <div class="desc">
-        📌 El mensaje debería aparecer dos veces.
-    </div>
-    <div class="task">
-        🎯 Revisá el código y corregí el problema.
-    </div>
-    <pre>
-texto = input("Escribí un mensaje: ")
-print(texto)
-print(text)
-    </pre>
-</div>
+print("Hola " + nombre)
 
-<div class="box">
-    <h2>4. Eco del usuario</h2>
-    <div class="desc">
-        📌 Mostrar palabra en mayúscula y minúscula.
-    </div>
-    <div class="task">
-        🎯 Detectá el error en el uso de funciones.
-    </div>
-    <pre>
-palabra = input("Palabra: ")
-print(palabra.upper)
-print(palabra.lower())
-    </pre>
-</div>
+print("Según nuestros cálculos tenés " + diner + " pesos")
 
-<div class="box">
-    <h2>5. Presentación</h2>
-    <div class="desc">
-        📌 Mostrar nombre, apellido y curso.
-    </div>
-    <div class="task">
-        🎯 Encontrá el error de sintaxis.
-    </div>
-    <pre>
-nombre = input("Nombre: ")
-apellido = input("Apellido: ")
-curso = input("Curso: ")
-print("Soy", nombre apellido, "del curso", curso)
-    </pre>
-</div>
+print("Nivel económico: sobrevivís hasta el martes")</code></pre>
 
-<div class="box">
-    <h2>6. Suma de dos números</h2>
-    <div class="desc">
-        📌 Sumar dos números ingresados.
+      <div class="descripcion">
+        <strong>Pista:</strong> hay una variable mal escrita.
+      </div>
     </div>
-    <div class="task">
-        🎯 Corregí el problema para que funcione la suma.
-    </div>
-    <pre>
-a = input("Número 1: ")
-b = input("Número 2: ")
-print("Resultado:", a + b)
-    </pre>
-</div>
+
+  </div>
+
+  <footer>
+    Taller de Python — Secundaria — Clase 1
+  </footer>
 
 </body>
 </html>
